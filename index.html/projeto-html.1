@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <title>Sabedoria Filosófica</title>
+    <style>
+        body {
+            background-color: #f4f1ea; /* Tom de papel antigo */
+            color: #2c2c2c;
+            font-family: 'Georgia', serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            text-align: center;
+        }
+        .container {
+            max-width: 600px;
+            padding: 40px;
+            border: 1px solid #d1cdc0;
+            background: white;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        h1 { font-size: 1.2rem; text-transform: uppercase; letter-spacing: 2px; color: #888; }
+        #frase { font-size: 1.8rem; margin: 30px 0; font-style: italic; }
+        #autor { font-weight: bold; color: #555; }
+        button {
+            margin-top: 30px;
+            padding: 10px 20px;
+            background: #2c2c2c;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-family: inherit;
+        }
+        button:hover { background: #555; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h1>Pensamento do Dia</h1>
+    <p id="frase">"A vitória sobre si mesmo é a maior das vitórias."</p>
+    <p id="autor">— Platão</p>
+    <button onclick="novaFrase()">Outra Reflexão</button>
+</div>
+
+<script>
+    const frases = [
+        { texto: "A vida sem exame não vale a pena ser vivida.", autor: "Sócrates" },
+        { texto: "Não é porque as coisas são difíceis que não ousamos; é porque não ousamos que elas são difíceis.", autor: "Sêneca" },
+        { texto: "Nós somos o que fazemos repetidamente. A excelência não é um ato, mas um hábito.", autor: "Aristóteles" },
+        { texto: "A felicidade da sua vida depende da qualidade dos seus pensamentos.", autor: "Marco Aurélio" },
+        { texto: "Uma jornada de mil milhas começa com um único passo.", autor: "Lao Tzu" }
+    ];
+
+    function novaFrase() {
+        const index = Math.floor(Math.random() * frases.length);
+        document.getElementById('frase').innerText = `"${frases[index].texto}"`;
+        document.getElementById('autor').innerText = `— ${frases[index].autor}`;
+    }
+</script>
+
+</body>
+</html>
