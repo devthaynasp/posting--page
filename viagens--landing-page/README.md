@@ -14,4 +14,4 @@ Para rodar o projeto localmente, siga estes passos:
 
 1. Clone este repositório:
    ```bash
-   git clone [https://github.com/](https://github.com/)[SEU-USUARIO]/viagens--landing-page.git
+   git clone[https://github.com/devthaynasp](https://github.com/)[devthaynasp]/viagens--landing-page.git

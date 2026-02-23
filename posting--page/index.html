@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minha Rede Social - Postagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="container">
+            <h1>Criar Post</h1>
+            <form id="meu-formulario">
+                <input type="text" id="input-titulo" placeholder="Título do post" required>
+                <textarea id="input-conteudo" placeholder="O que você está pensando?" required></textarea>
+                <button type="submit" id="btn-enviar">Postar Agora</button>
+            </form>
+        </section>
+
+        <section class="resultado">
+            <h2>Preview da Postagem:</h2>
+            <div class="card">
+                <h3 id="renderizador-titulo"></h3>
+                <p id="renderizador-conteudo"></p>
+            </div>
+        </section>
+    </main>
+
+    <script src="main.js"></script>
+</body>
+</html>
